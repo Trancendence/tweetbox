@@ -1,12 +1,12 @@
 import { useEffect } from "react";
-import { TweetsList } from "../componens/TweetsList/TweetsList";
+import { TweetsList } from "../components/TweetsList/TweetsList";
 import { fetchTweets } from "../redux/operations";
 import { useDispatch } from "react-redux/es/exports";
 import { Link } from "react-router-dom";
-import { Filter } from "../componens/Filter/Filter";
-import { ButtonBack } from "../componens/Filter/Filter.styled";
+import { Filter } from "../components/Filter/Filter";
+import { ButtonBack } from "../components/Filter/Filter.styled";
 import { selectIsLoading } from "../redux/selectors";
-import { Loader } from "../componens/Loader/Loader";
+import { Loader } from "../components/Loader/Loader";
 import { useSelector } from "react-redux";
 import { useLocation } from "react-router-dom";
 

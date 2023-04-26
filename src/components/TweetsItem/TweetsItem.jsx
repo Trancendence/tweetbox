@@ -1,8 +1,9 @@
 import logo from "../../images/logo.png";
 import tweet from "../../images/tweet.png";
-
 import { useDispatch } from "react-redux/es/exports";
 import { editTweets } from "../../redux/operations";
+import PropTypes from 'prop-types';
+
 import {
   Avatar,
   ButtonFollow,
@@ -69,3 +70,15 @@ export const TweetsItem = ({
     </div>
   );
 };
+
+
+TweetsItem.propTypes = {
+  id: PropTypes.string,
+  user: PropTypes.string,
+  followers: PropTypes.number,
+  tweets: PropTypes.number,
+  avatar: PropTypes.string,
+}
+TweetsItem.propTypes = {
+  isFollowing: PropTypes.bool,
+}

@@ -1,5 +1,5 @@
 import { createSelector } from "@reduxjs/toolkit";
-import { statusFilters } from "./constans";
+import { statusFilters } from "./constant";
 
 export const selectTweets = (state) => state.tweets.items;
 export const selectFilter = (state) => state.filters.status;

@@ -1,7 +1,7 @@
 export default function Home() {
     return (
       <div>
-        <h1>Welcome to the Tweets-App :)</h1>
+        <h1>Welcome to the Tweetter</h1>
       </div>
     );
-  }
+  }  
